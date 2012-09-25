@@ -48,6 +48,15 @@ describe('Errors', function() {
     done();
   });
 
+  describe('.version', function () {
+
+    it('should match the format x.x.x', function (done) {
+      errors.version.should.match(/^\d+\.\d+\.\d+$/);
+      done();
+    });
+
+  });
+
   describe('catch all', function () {
 
     it('should add a catch all middleware to the app that passes a NotFound error to next', function (done) {

@@ -17,14 +17,9 @@ describe('Errors', function(){
       server;
 
   before(function (done) {
-
-    if (!app.address) {
-      var port = 8000;
-      server = app.listen(port);
-      baseURL = 'http://localhost:' + port;
-    } else {
-      baseURL = 'http://localhost:' + app.address().port;
-    }
+    var port = 8000;
+    server = app.listen(port);
+    baseURL = 'http://localhost:' + port;
     done();
   });
 
@@ -32,7 +27,7 @@ describe('Errors', function(){
     server.close(done);
   });
 
-  it('should 404 when visiting a page that does not exist', function(done) {
+  it('should 404 when visiting a page that does not exist', function (done) {
     request
       .get(baseURL + '/a-page-that-does-not-exist')
       .end(function (err, res) {
@@ -42,7 +37,7 @@ describe('Errors', function(){
       });
   });
 
-  it('should 200 when visiting a page that does exist', function(done) {
+  it('should 200 when visiting a page that does exist', function (done) {
     request
       .get(baseURL + '/')
       .end(function (err, res) {
@@ -54,7 +49,7 @@ describe('Errors', function(){
 
   describe('500', function () {
 
-    it('should 500 when a route throws an error', function(done) {
+    it('should 500 when a route throws an error', function (done) {
       request
         .get(baseURL + '/error')
         .end(function (err, res) {
