@@ -18,6 +18,7 @@
   },
   "scripts" : {
     "test" : "make test",
+    "unit" : "make unit",
     "spec" : "make spec"
   }
 }
