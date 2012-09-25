@@ -2,6 +2,8 @@
 
   Error Handling for an Express Application.
 
+  [![Build Status](https://secure.travis-ci.org/RGBboy/express-errors.png)](http://travis-ci.org/RGBboy/express-errors)
+
 ## Features
 
   * Adds a catch all middleware and throws a 404.
