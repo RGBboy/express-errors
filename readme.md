@@ -1,4 +1,4 @@
-# Error Component
+# Express Errors
 
   Error Handling for an Express Application.
 
@@ -12,6 +12,8 @@
 ## Installation
 
   Works with Express 3.0.x
+
+    npm install git://github.com/RGBboy/express-errors.git
 
 ## Usage
 
