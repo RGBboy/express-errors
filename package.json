@@ -1,0 +1,23 @@
+{
+  "name": "express-errors",
+  "version": "0.0.1",
+  "description": "Express Errors",
+  "keywords": ["express"],
+  "author": "RGBboy <me@rgbboy.com>",
+  "main": "index",
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "express": "3.0.x",
+    "jade": "0.27.x",
+    "mocha": "1.5.x",
+    "superagent": "0.9.x",
+    "should": "1.2.x"
+  },
+  "scripts" : {
+    "test" : "make test",
+    "spec" : "make spec"
+  }
+}
